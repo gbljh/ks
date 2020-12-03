@@ -14,6 +14,7 @@ THREAD_VOID handle_connection(void* psocket) {
 		int rc = recv(socket, buffer, sizeof(buffer), 0);
 		if (rc > 0) {
 			printf("[%s]:%s\n", str_in_addr, buffer);
+			
 		}
 		else {
 			break;

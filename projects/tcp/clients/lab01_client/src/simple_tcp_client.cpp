@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 	printf("Connection to the server %s:%d success\n", host, port);
 
 	char msg[256] = "";
-	printf("%s", "Enter msg:");
+	printf("%s", "Enter x1 y1 x2 y2 ... xn yn:");
 	//fgets(msg, sizeof(msg), stdin);
 	scanf("%[^\n]s", msg);
 	int sc = send(client_socket, msg, sizeof(msg), 0);
